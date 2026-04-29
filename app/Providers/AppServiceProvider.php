@@ -40,9 +40,10 @@ class AppServiceProvider extends ServiceProvider
         });
         Route::singularResourceParameters(false);
         $this->composer();
-        URL::forceScheme('https');
+if (env('FORCE_HTTPS', false)){       
+ URL::forceScheme('https');
     }
-
+}
     public function composer()
     {
         \View::composer('themes.default1.update.notification', function () {

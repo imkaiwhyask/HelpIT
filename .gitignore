@@ -1,16 +1,33 @@
-# Please try and keep this file organized by alphabetical order. Single files first, then directories.
+# Environment
+
 .env
-.phpunit.result.cache
-.DS_Store
-Homestead.yaml
-Homestead.json
-/config/lfm.php
-/nbproject/*
+
+# Laravel
+
+/vendor
+/bootstrap/cache/*.php
+/storage/*.key
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+
+# Node
+
 /node_modules
-/public/error_log
-/public/lb-faveo/media/
+
+# Uploads / user files
+
 /public/uploads
-/public/photos/
-/app/FaveoJob
-/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+/public/photos
+/public/lb-faveo/media/
 /storage/app/attachments
+
+# Logs
+
+*.log
+
+# OS
+
+.DS_Store
+Thumbs.db
