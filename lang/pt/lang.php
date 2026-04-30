@@ -1115,7 +1115,7 @@ return [
       | Main text
       |-----------------------------------------------
      */
-    'copyright'           => 'Copyright',
+    'copyright'           => '',
     'all_rights_reserved' => 'Todos os direitos reservados',
     'powered_by'          => 'Distribuído por',
     'version'             => 'Version',

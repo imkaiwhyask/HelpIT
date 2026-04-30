@@ -24,7 +24,7 @@
 /storage/app/attachments
 
 # Logs
-
+docker-compose.yml
 *.log
 
 # OS

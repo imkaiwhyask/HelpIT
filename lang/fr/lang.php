@@ -1120,9 +1120,9 @@ return [
       | Main text
       |-----------------------------------------------
      */
-    'copyright'           => 'Copyright',
+    'copyright'           => '',
     'all_rights_reserved' => 'Tous droits réservés',
-    'powered_by'          => 'Powered by',
+    'powered_by'          => '',
     'version'             => 'Version',
     /*
       |------------------------------------------------

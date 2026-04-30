@@ -1165,9 +1165,9 @@ return [
       | Main text
       |-----------------------------------------------
      */
-    'copyright'           => 'Copyright',
-    'all_rights_reserved' => 'All rights reserved',
-    'powered_by'          => 'Powered by',
+    'copyright'           => '',
+    'all_rights_reserved' => '',
+    'powered_by'          => '',
     'version'             => 'Version',
     /*
       |------------------------------------------------

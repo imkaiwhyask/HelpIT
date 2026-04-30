@@ -7,7 +7,7 @@
     if (isset($title->name)) {
         $title_name = $title->name;
     } else {
-        $title_name = "SUPPORT CENTER";
+        $title_name = "HelpIT";
     }
     ?>
     <title> @yield('title') {!! strip_tags($title_name) !!} </title>
@@ -112,7 +112,7 @@
                                         @if($system->name)
                                             {!! $system->name !!}
                                         @else
-                                            <b>SUPPORT</b> CENTER
+                                            Help<b>IT</b>
                                         @endif
                                     @endif
                                 </a>
@@ -352,7 +352,7 @@
             <hr style="color:#E5E5E5"/>
             <div class="row">
                 <div class="site-info col-md-6">
-                    <p class="text-muted">{!! Lang::get('lang.copyright') !!} &copy; {!! date('Y') !!}  <a href="{!! $company->website !!}" target="_blank">{!! $company->company_name !!}</a>. {!! Lang::get('lang.all_rights_reserved') !!}. {!! Lang::get('lang.powered_by') !!} <a href="http://www.faveohelpdesk.com/"  target="_blank">Faveo</a></p>
+                    <p class="text-muted">{!! Lang::get('lang.copyright') !!} &copy; {!! date('Y') !!}  {!! $company->website !!} {!! $company->company_name !!}</a>HelpIT. All rights reserved.</p>
                 </div>
                 <div class="site-social text-right col-md-6">
                     <?php $socials = App\Model\helpdesk\Theme\Widgets::all(); ?>

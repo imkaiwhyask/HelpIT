@@ -5,7 +5,7 @@
     
         <meta charset="UTF-8" ng-app="myApp">
     
-        <title>Faveo | HELP DESK</title>
+        <title>HelpIT | HELP DESK</title>
     
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     
@@ -315,26 +315,7 @@
                         </div>
                     </li>
 
-                    <li class="nav-item dropdown">
-
-                        <?php $src = Lang::getLocale().'.png'; ?>
-
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-                            <img src="{{asset("lb-faveo/flags/$src")}}">
-                        </a>
-                       
-                       <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right p-0" style="width: 290px;">
-                           
-                           @foreach($langs as $key => $value)
-                            <?php $src = $key.".png"; ?>
-                            <a href="#" class="dropdown-item" id="{{$key}}" onclick="changeLang(this.id)"><img src="{{asset("lb-faveo/flags/$src")}}">&nbsp;{{$value[0]}}&nbsp;
-                            @if(Lang::getLocale() == "ar")
-                            &rlm;
-                            @endif
-                            ({{$value[1]}})</a>
-                            @endforeach      
-                       </div>
-                    </li>
+                  
 
                     <li class="nav-item dropdown user-menu">
 
@@ -370,7 +351,7 @@
             <!-- Left side column. contains the logo and sidebar -->
             <aside class="main-sidebar elevation-4 sidebar-dark-black">
 
-                <a href="http://www.faveohelpdesk.com" class="brand-link " style="text-align: center;">
+                <a class="brand-link " style="text-align: center;">
                     <img src="{{ asset('lb-faveo/media/images/logo.png')}}" class="brand-image" alt="Company Log0">
                 </a>
 
@@ -650,7 +631,7 @@
                     <span style="font-weight: 500">{!! Lang::get('lang.version') !!}</span> {!! Config::get('app.version') !!}
                 </div>
 
-                <span style="font-weight: 500">{!! Lang::get('lang.copyright') !!} &copy; {!! date('Y') !!}  <a href="{!! $company->website !!}" target="_blank">{!! $company->company_name !!}</a>.</span> {!! Lang::get('lang.all_rights_reserved') !!}. {!! Lang::get('lang.powered_by') !!} <a href="http://www.faveohelpdesk.com/" target="_blank">Faveo</a>
+                <span style="font-weight: 500">{!! Lang::get('lang.copyright') !!} &copy; {!! date('Y') !!}  {!! $company->website !!} {!! $company->company_name !!}HelpIT. All rights reserved.
             </footer>
         </div><!-- ./wrapper -->
         <script src="{{asset("lb-faveo/adminlte3/js/adminlte3.2.0.min.js")}}" type="text/javascript"></script>

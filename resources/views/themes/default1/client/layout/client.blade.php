@@ -7,7 +7,7 @@
         if (isset($title->name)) {
             $title_name = $title->name;
         } else {
-            $title_name = "SUPPORT CENTER";
+            $title_name = "HelpIT";
         }
         ?>
         <title> @yield('title') {!! strip_tags($title_name) !!} </title>
@@ -126,7 +126,7 @@
                                 @if($system->name)
                                 {!! $system->name !!}
                                 @else
-                                <b>SUPPORT</b> CENTER
+                                Help<b>IT</b>
                                 @endif
                                 @endif
                             </a>
@@ -236,24 +236,7 @@
 
                                     @endif
                                     @endif
-                                    <li class="nav-item dropdown">
-                                    <?php $src = Lang::getLocale().'.png'; ?>
-                                        <a href="#" class="dropdown-toggle nav-link" id="navbarDropdown" role="button" data-toggle="" aria-haspopup="true"
-                                            aria-expanded="false">
-                                            <img src="{{asset("lb-faveo/flags/$src")}}"></img>
-                                        </a>
-                                        <ul class="dropdown-menu" style="right: -1px !important;left: auto !important;" role="menu" aria-labelledby="dropdownMenu" id="lang_ul">
-                                            @foreach($langs as $key => $value)
-                                                <?php $src = $key.".png"; ?>
-                                                <li><a href="#" id="{{$key}}" onclick="changeLang(this.id)" class="lang dropdown-item">
-                                                    <img src="{{asset("lb-faveo/flags/$src")}}"></img>&nbsp;{{$value[0]}}&nbsp;
-                                            @if(Lang::getLocale() == "ar")
-                                                &rlm;
-                                            @endif
-                                                ({{$value[1]}})</a></li>
-                                            @endforeach
-                                        </ul>
-                                    </li>
+                                   
                                 </ul>
 {{--                            <span class="switcher-toggle desk_none" onclick="myFunction()">--}}
 {{--                          <span class="icon"></span>--}}
@@ -458,7 +441,7 @@
                     <hr style="color:#E5E5E5"/>
                     <div class="row">
                         <div class="site-info col-md-6">
-                            <p class="text-muted">{!! Lang::get('lang.copyright') !!} &copy; {!! date('Y') !!}  <a href="{!! $company->website !!}" target="_blank">{!! $company->company_name !!}</a>. {!! Lang::get('lang.all_rights_reserved') !!}. {!! Lang::get('lang.powered_by') !!} <a href="https://www.faveohelpdesk.com/"  target="_blank">Faveo</a></p>
+                            <p class="text-muted">{!! Lang::get('lang.copyright') !!} &copy; {!! date('Y') !!}  {!! $company->website !!} {!! $company->company_name !!}</a> HelpIT. All rights reserved.</p>
                         </div>
                         <div class="site-social text-right col-md-6">
                             <?php $socials = App\Model\helpdesk\Theme\Widgets::all(); ?>

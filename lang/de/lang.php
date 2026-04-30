@@ -809,9 +809,9 @@ return [
       | Main text
       |-----------------------------------------------
      */
-    'copyright'           => 'Copyright',
+    'copyright'           => '',
     'all_rights_reserved' => 'Alle Rechte vorbehalten',
-    'powered_by'          => 'Powered by',
+    'powered_by'          => '',
     'version'             => 'Version',
     /*
       |------------------------------------------------

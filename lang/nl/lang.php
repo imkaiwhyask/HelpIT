@@ -1181,7 +1181,7 @@ return [
       | Main text
       |-----------------------------------------------
      */
-    'copyright'           => 'Copyright',
+    'copyright'           => '',
     'all_rights_reserved' => 'Alle rechten voorbehouden',
     'powered_by'          => 'Mogelijk gemaakt door',
     'version'             => 'Version',
